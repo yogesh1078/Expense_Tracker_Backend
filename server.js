@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://yogesh8078sharma_db_user:Mk6vWgtsDXALFLor@cluster0.vljfvmq.mongodb.net/?appName=Cluster0mongodb+srv://yogesh8078sharma_db_user:Mk6vWgtsDXALFLor@cluster0.vljfvmq.mongodb.net/?appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(MONGODB_URI)
